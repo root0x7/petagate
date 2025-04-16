@@ -30,6 +30,7 @@ def analiz(message):
 		return False
 
 
+
 def analizer(message,data):
 	df = pd.DataFrame(data)
 	# df.drop(['id', 'status', 'message','date'],axis=1, inplace=True)

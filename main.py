@@ -9,8 +9,6 @@ app = Flask(__name__)
 
 CORS(app,origins=["http://localhost:8080"])
 app.secret_key= 'juda_ishonchli_parol'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://phpmyadmin:xroot@localhost/enigma'
 
 db.init_app(app)
 app.register_blueprint(blueprint,url_prefix='/')
